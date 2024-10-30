@@ -1,0 +1,52 @@
+.cardContainer {
+    height: auto;
+
+    max-width: 350px;
+    padding: 8px;
+    background: linear-gradient(180deg, #0a0aa8, hwb(257 0% 97%));
+    opacity: 0.9;
+    border-radius: 55px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cardContainer:hover {
+    transform: scale(1.02);
+}
+
+.imageContainer {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.p {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+
+    color: bisque;
+    font-weight: 500;
+}
+
+
+.p::first-letter {
+    text-transform: capitalize;
+}
