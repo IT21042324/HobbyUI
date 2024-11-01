@@ -1,5 +1,5 @@
 .cardContainer {
-    height: auto;
+    height: 370px;
 
     max-width: 350px;
     padding: 8px;
@@ -16,36 +16,52 @@
 }
 
 .imageContainer {
+    position: relative;
     height: 100%;
     width: 100%;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
     box-sizing: border-box;
-
+    overflow: hidden;
+    /* Ensure the overlay stays within bounds */
 }
+
+.imageContainer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    /* Adjust the height as needed */
+    background: linear-gradient(transparent, #02021e);
+    pointer-events: none;
+    /* Ensures the overlay doesn't interfere with interactions */
+    border-radius: 45px;
+}
+
 
 .image {
     width: 100%;
-    height: auto;
-    max-height: 300px;
+    height: 100%;
     object-fit: cover;
     border-radius: 45px;
 }
 
+
 .p {
-    margin: 0;
-    margin-top: 5px;
-    padding: 0 20px;
-    padding-bottom: 5px;
+    z-index: 2;
     font-size: 20px;
 
     color: bisque;
     font-weight: 500;
-}
 
+    position: absolute;
+    bottom: 10px;
+    padding: 0 20px;
+}
 
 .p::first-letter {
     text-transform: capitalize;

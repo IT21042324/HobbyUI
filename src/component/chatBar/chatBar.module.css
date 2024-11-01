@@ -16,8 +16,10 @@
     align-items: center;
 
     /* Shadow for elevation */
-    box-shadow: 50px 50px 800px rgba(8, 207, 55, 0.3);
+    box-shadow: 0 0 30px 15px #070729;
+
 }
+
 
 
 .iconContainer {
@@ -37,7 +39,6 @@
     transform: scale(1.3);
     color: cornflowerblue;
 }
-
 
 .textArea {
     border: none;
