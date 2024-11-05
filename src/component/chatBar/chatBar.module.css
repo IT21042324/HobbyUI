@@ -8,7 +8,7 @@
     min-width: 200px;
     height: auto;
     border-radius: 30px;
-    background: linear-gradient(90deg, #0a0aa8, hwb(257 0% 97%));
+    background: #192139;
     padding: 15px;
 
     display: flex;
@@ -33,18 +33,19 @@
 .icon {
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
+    color: #898184
 }
 
 .icon:hover {
     transform: scale(1.3);
-    color: cornflowerblue;
+    color: #504c4d;
 }
 
 .textArea {
     border: none;
     border-radius: 20px;
     line-height: 40px;
-    background-color: rgb(17, 16, 83);
+    background-color: #0f1421;
 
 
     min-width: 160px;

@@ -16,7 +16,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(180deg, #030350, hwb(256 2% 73%));
+  background: linear-gradient(180deg, #0d121f, #232d4d);
 
   /* Gradient background */
 }
